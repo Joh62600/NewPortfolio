@@ -1,0 +1,106 @@
+/* src/components/Contact.css */
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px; /* Espace entre le formulaire et les coordonnées */
+  padding: 20px;
+}
+
+.contact-form, .contact-details {
+  flex: 1;
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2, .contact-details h2 {
+  margin-top: 0;
+}
+
+.contact-form form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-form form input, .contact-form form textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form form button {
+  margin-top: 10px;
+  width: 25%;
+  padding: 10px;
+  background-color: #76c7c0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form form button:hover {
+  background-color: #5ca8a4;
+}
+
+.contact-details p {
+  margin: 10px 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  letter-spacing: 2.3px;
+  line-height: 50px;
+}
+
+/* Media queries pour tablette */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-form form input, .contact-form form textarea {
+    width: 75%;
+  }
+
+  .contact-form form button {
+    width: 75%;
+  }
+}
+
+/* Media queries pour mobile */
+@media (max-width: 480px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .contact-form, .contact-details {
+    padding: 10px;
+  }
+
+  .contact-form form label {
+    margin: 5px 0 3px;
+  }
+
+  .contact-form form input, .contact-form form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  .contact-form form button {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .contact-details p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+  }
+}

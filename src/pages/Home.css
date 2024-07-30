@@ -1,0 +1,249 @@
+.image-overlay-container {
+  position: relative;
+  width: 100%;
+}
+
+.TitreInfo {
+  margin-top: 10px;
+}
+
+.background {
+  width: 100%;
+  height: auto;
+  max-height: 800px; /* Ajustez cette valeur selon vos besoins */
+  object-fit: cover; /* Pour s'assurer que l'image couvre bien l'espace tout en gardant les proportions */
+}
+
+.overlay-text-title,
+.overlay-text {
+  position: absolute;
+  color: yellow;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; /* Crée l'effet de contour */
+}
+
+.overlay-text-title {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+}
+
+.overlay-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px; /* Ajoute de l'espace entre l'intro et les projets */
+}
+
+.pres {
+  display: flex;
+  align-items: center; /* Centre les éléments verticalement */
+  text-align: left; /* Aligne le texte à gauche */
+}
+
+.pres img {
+  flex: 0 0 150px; /* Largeur fixe pour l'image */
+  height: 450px; /* Maintient le ratio de l'image */
+  border-radius: 10%; /* Optionnel: rend l'image circulaire */
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.pres p {
+  flex: 1;
+  margin-left: 20px; /* Ajoute de l'espace entre l'image et le texte */
+  font-size: 26px;
+  letter-spacing: 3px;
+  line-height: 45px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les cartes de projet horizontalement */
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centre les cartes de projet dans la liste */
+  gap: 20px;
+  width: 100%; /* Assure que la liste prend toute la largeur */
+  max-width: 1200px; /* Optionnel: limite la largeur max */
+}
+
+.comp {
+  margin-left: 50px;
+}
+
+.comp h2 {
+  text-align: left;
+  margin-left: 120px;
+}
+
+.comp-cv-container {
+  display: flex;
+  justify-content: space-between; /* Espace entre comp et cv */
+  gap: 20px; /* Ajoute de l'espace entre les sections */
+}
+
+.comp,
+.cv {
+  flex: 1; /* Fait en sorte que les deux sections prennent un espace égal */
+}
+
+.cv-image {
+  height: 500px;
+  width: auto;
+  border: 1px solid #ddd;
+  display: block; /* Assure que l'image est traitée comme un élément de bloc */
+  margin: 0 auto 10px auto; /* Centre l'image et ajoute de l'espace en dessous */
+}
+
+.cv-download-button {
+  display: block; /* Fait du bouton un élément de bloc */
+  padding: 10px 20px;
+  background-color: #76c7c0;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin: 10px auto 0 auto; /* Centre le bouton et ajoute de l'espace au dessus */
+  width: fit-content; /* Ajuste la largeur pour s'adapter au contenu */
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.cv-download-button:hover {
+  background-color: #5ca8a4;
+}
+
+/* src/pages/Home.css */
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Media queries pour tablette */
+@media (max-width: 768px) {
+  .image-overlay-container {
+    width: 100%;
+  }
+
+  .overlay-text-title,
+  .overlay-text {
+    font-size: 1.5rem;
+  }
+
+  .intro {
+    margin-bottom: 20px;
+  }
+
+  .pres {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .pres img {
+    margin: 0 auto;
+    height: auto;
+    width: 50%;
+  }
+
+  .pres p {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  .comp-cv-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .comp h2 {
+    margin-left: 0;
+  }
+
+  .cv-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .cv-download-button {
+    width: 75%;
+  }
+}
+
+/* Media queries pour mobile */
+@media (max-width: 480px) {
+  .image-overlay-container {
+    width: 100%;
+  }
+
+  .overlay-text-title,
+  .overlay-text {
+    font-size: 1.2rem;
+  }
+
+  .intro {
+    margin-bottom: 10px;
+  }
+
+  .pres {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .pres img {
+    margin: 0 auto;
+    height: auto;
+    width: 75%;
+  }
+
+  .pres p {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .comp-cv-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .comp h2 {
+    margin-left: 0;
+  }
+
+  .cv-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .cv-download-button {
+    width: 75%;
+  }
+}

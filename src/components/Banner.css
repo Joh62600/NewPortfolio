@@ -1,0 +1,103 @@
+/* src/components/Banner.css */
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 325px; 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Ajustez l'opacité comme nécessaire */
+  pointer-events: none; /* Assurez-vous que l'overlay ne bloque pas les interactions */
+}
+
+.banner-text {
+  position: relative; /* Pour s'assurer que le texte est au-dessus de l'overlay */
+  font-size: 2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: yellow;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.banner-title {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.banner-quote {
+  margin-top: 10px;
+  font-size: 2.8rem;
+  font-style: italic;
+}
+
+.banner-author {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  font-style: normal;
+  color: yellow;
+}
+
+/* Media queries pour tablette */
+@media (max-width: 768px) {
+  .banner {
+    height: 250px;
+  }
+
+  .banner-text {
+    font-size: 1.5rem;
+    padding: 8px 16px;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-quote {
+    font-size: 2rem;
+  }
+
+  .banner-author {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media queries pour mobile */
+@media (max-width: 480px) {
+  .banner {
+    height: 200px;
+  }
+
+  .banner-text {
+    font-size: 1.2rem;
+    padding: 6px 12px;
+  }
+
+  .banner-title {
+    font-size: 1.8rem;
+  }
+
+  .banner-quote {
+    font-size: 1.6rem;
+  }
+
+  .banner-author {
+    font-size: 1rem;
+  }
+}
