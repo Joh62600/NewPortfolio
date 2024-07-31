@@ -5,9 +5,11 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import './App.css';
 
+const basename = process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : '';
+
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="App">
         <Navbar />
         <Routes>

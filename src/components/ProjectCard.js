@@ -1,4 +1,3 @@
-// src/components/ProjectCard.js
 import React, { useState, useEffect } from 'react';
 import './ProjectCard.css';
 

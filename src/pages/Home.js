@@ -1,4 +1,3 @@
-// src/pages/Home.js
 import React, { useState } from 'react';
 import './Home.css';
 import ProjectCard from '../components/ProjectCard';
@@ -7,6 +6,7 @@ import Banner from '../components/Banner';
 import Contact from '../components/Contact';
 import Modal from '../components/ModalProjet';
 
+// Chemins relatifs pour les images
 import moi from '../assets/img/moi.jpg';
 import DevWebImage from '../assets/img/DevWeb.webp';
 import bannerImage from '../assets/img/Banner.webp';
@@ -119,7 +119,7 @@ const Home = () => {
         <section className='cv' id='competences'>
           <h2>CV</h2>
           <img src={cvImage} alt="CV Johann Plee" className="cv-image" />
-          <a href="/cv.pdf" download="Johann_Plee_CV.pdf" className="cv-download-button">
+          <a href={cvImage} download="Johann_Plee_CV.pdf" className="cv-download-button">
             Télécharger le CV
           </a>
         </section>
