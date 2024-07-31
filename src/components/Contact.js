@@ -1,5 +1,3 @@
-// src/components/Contact.js
-
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css';
@@ -21,14 +19,26 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.send('service_slfub3w', 'template_skmbpgh', formData, 'ef8gG9Naw_NdmbjqJ')
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('Message envoyé avec succès!');
-      }, (error) => {
-        console.log('FAILED...', error);
-        alert('Échec de l\'envoi du message.');
-      });
+
+    emailjs.sendForm(
+      'service_slfub3w', 
+      'template_skmbpgh', 
+      e.target, 
+      'ef8gG9Naw_NdmbjqJ' 
+    ).then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      alert('Message envoyé avec succès!');
+    }, (error) => {
+      console.log('FAILED...', error);
+      alert('Échec de l\'envoi du message.');
+    });
+
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
   };
 
   return (

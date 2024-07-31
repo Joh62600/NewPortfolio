@@ -115,6 +115,19 @@
   object-fit: contain;
   margin-bottom: 5px;
 }
+.modal-skills {
+  margin-top: 20px;
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skill-item {
+  margin-bottom: 5px;
+}
+
 
 /* Styles responsives */
 @media (max-width: 768px) {

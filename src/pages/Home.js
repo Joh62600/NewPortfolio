@@ -45,6 +45,11 @@ const Home = () => {
       description: "Ce projet consiste en la création d'un portfolio interactif pour un architecte, intégrant une galerie dynamique des travaux récupérés depuis un back-end.",
       images: [HomeP6, LoginP6, ModeEditionP6],
       githubLink: "https://github.com/Joh62600/Projet-6",
+      skills: [
+        "Gestion de projet",
+        "Développement Frontend",
+        "Intégration continue"
+      ],
       technologies: [
         { name: 'HTML', logo: htmlLogo },
         { name: 'CSS', logo: cssLogo },
@@ -56,6 +61,11 @@ const Home = () => {
       description: "Le projet consiste en la création de l'application web Kasa en utilisant React. Il intègre des fonctionnalités avancées telles que le routage, des carrousels d'images dynamiques, et la gestion des erreurs, tout en affichant et filtrant les propriétés conformément aux maquettes fournies.",
       images: [HomeP8, AboutP8, FicheLogementP8],
       githubLink: "https://github.com/Joh62600/kasa",
+      skills: [
+        "Développement React",
+        "Gestion des états",
+        "Utilisation des hooks"
+      ],
       technologies: [
         { name: 'React', logo: reactLogo },
         { name: 'CSS', logo: cssLogo },
@@ -66,6 +76,11 @@ const Home = () => {
       description: "Ce projet consiste à installer, configurer et déboguer une application React en utilisant les outils de développement et de tests. L'objectif est de s'assurer que toutes les fonctionnalités sont opérationnelles et conformes aux besoins du client.",
       images: [HomeP10, ContactP10, FiltreP10, FooterP10],
       githubLink: "https://github.com/Joh62600/Projet10",
+      skills: [
+        "Débogage",
+        "Tests unitaires",
+        "Configuration des outils"
+      ],
       technologies: [
         { name: 'JavaScript', logo: jsLogo },
         { name: 'React', logo: reactLogo },

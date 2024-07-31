@@ -48,17 +48,18 @@ const ModalProjet = ({ show = true, onClose, project }) => {
               Voir sur GitHub
             </a>
           )}
-          <div className="project-images">
-            {project.images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`${project.title} ${index + 1}`}
-                className="project-image"
-                onClick={() => handleImageClick(image)}
-              />
-            ))}
-          </div>
+
+          {project.skills && project.skills.length > 0 && (
+            <div className="modal-skills">
+              <h3>Compétences acquises</h3>
+              <ul className="skills-list">
+                {project.skills.map((skill, index) => (
+                  <li key={index} className="skill-item">{skill}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           <div className="modal-technologies">
             <h3>Technologies utilisées</h3>
             <div className="technologies-list">
@@ -69,6 +70,17 @@ const ModalProjet = ({ show = true, onClose, project }) => {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="project-images">
+            {project.images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`${project.title} ${index + 1}`}
+                className="project-image"
+                onClick={() => handleImageClick(image)}
+              />
+            ))}
           </div>
         </div>
       </Modal>
