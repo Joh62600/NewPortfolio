@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/repository-name/static/css/main.e9c208be.css",
+    "main.js": "/repository-name/static/js/main.8b739ab4.js",
+    "static/media/HomeP10.png": "/repository-name/static/media/HomeP10.8820df71cce5650a485f.png",
+    "static/media/HomeP8.png": "/repository-name/static/media/HomeP8.5623d4cf6c12df3cfc09.png",
+    "static/media/HomeP6.png": "/repository-name/static/media/HomeP6.86ca7bc0e5d19dac1f46.png",
+    "static/media/FicheLogementP8.png": "/repository-name/static/media/FicheLogementP8.d2570fd938f6f45621ec.png",
+    "static/media/AboutP8.png": "/repository-name/static/media/AboutP8.08eb8325a467ae3754c5.png",
+    "static/media/ModeEditionP6.png": "/repository-name/static/media/ModeEditionP6.4c6342a9461d4274a0c3.png",
+    "static/media/BannerQuotes.webp": "/repository-name/static/media/BannerQuotes.3fca42af0ecec1fe1241.webp",
+    "static/media/Banner.webp": "/repository-name/static/media/Banner.d6baad93e2aa9d97bf64.webp",
+    "static/media/FiltreP10.png": "/repository-name/static/media/FiltreP10.f9b270f6d00aac9dd8fb.png",
+    "static/media/DevWeb.webp": "/repository-name/static/media/DevWeb.5003b75034753ee19327.webp",
+    "static/media/logo.webp": "/repository-name/static/media/logo.b4230b200d1d47887946.webp",
+    "static/media/moi.jpg": "/repository-name/static/media/moi.945eb60a2314de2740f9.jpg",
+    "static/media/FooterP10.png": "/repository-name/static/media/FooterP10.5f42b8f066fb21e33a9a.png",
+    "static/media/cvImage.png": "/repository-name/static/media/cvImage.a8fc5597c3aee3431786.png",
+    "static/media/ContactP10.png": "/repository-name/static/media/ContactP10.0d3e11accf7c2e5c4aa0.png",
+    "static/media/LoginP6.png": "/repository-name/static/media/LoginP6.4a0b8de9be7ca19ff769.png",
+    "index.html": "/repository-name/index.html",
+    "main.e9c208be.css.map": "/repository-name/static/css/main.e9c208be.css.map",
+    "main.8b739ab4.js.map": "/repository-name/static/js/main.8b739ab4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9c208be.css",
+    "static/js/main.8b739ab4.js"
+  ]
+}
